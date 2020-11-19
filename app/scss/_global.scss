@@ -1,5 +1,29 @@
-
-
-body {
-
+html,
+body{
+  height: 100%;
 }
+
+body{
+  @extend %rubik-400;
+  font-size: 14px;
+  line-height: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.main{
+  flex-grow: 1;
+}
+
+.container{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.container__header{
+  max-width: 1800px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
