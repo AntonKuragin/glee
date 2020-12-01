@@ -837,3 +837,40 @@
   }
 }
 
+.terms{
+  padding: 120px 0;
+  &__title{
+    @extend %title;
+    margin-bottom: 28px;
+  }
+  &__list{
+    margin-bottom: 75px;
+    counter-reset: num;
+  }
+  &__list-text{
+    margin-left: 30px;
+    @extend %rubik-400;
+    font-size: 16px;
+    color: #243f4d;
+    margin-bottom: 35px;
+    padding-left: 10px;
+    position: relative;
+    list-style-type: none;
+    &:before{
+      content: "0" counter(num) ". ";
+      counter-increment: num;
+      position: absolute;
+      left: -22px;
+      @extend %rubik-400;
+      font-size: 16px;
+      color: #243f4d;
+    }
+  }
+  &__text{
+    @extend %rubik-400;
+    font-size: 16px;
+    color: #243f4d;
+    margin-bottom: 75px;
+  }
+
+}
