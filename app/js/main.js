@@ -1,5 +1,7 @@
 $(function () {
 
+  
+
   $('.detalis-tabs__top-link').on('click', function(e){
     e.preventDefault();
     $('.detalis-tabs__top-link').removeClass('detalis-tabs__top-link--active');
